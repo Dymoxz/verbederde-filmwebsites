@@ -1,0 +1,141 @@
+.about {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.angry-grid {
+    display: grid;
+    grid-template-rows: 8vh auto 10vh;
+    height: 100%;
+}
+
+.angry-grid > *:nth-child(1) {
+    order: 1;
+}
+
+.angry-grid > *:nth-child(2) {
+    order: 3;
+}
+
+.angry-grid > *:nth-child(3) {
+    order: 2;
+}
+
+.content {
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px;
+    height: 100%;
+}
+
+#item-0c {
+    grid-area: 1 / 1 / 4 / 2;
+    padding: 20px;
+}
+
+#item-0c img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+#item-1c {
+    grid-area: 1 / 2 / 5 / 3;
+    padding: 0 20px;
+    color: #484b6a;
+}
+
+#item-1c p {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+#item-1c p1 {
+    font-weight: normal;
+}
+
+#item-2c {
+    grid-area: 1 / 3 / 2 / 4;
+    font-size: 2rem;
+    color: #484b6a;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#item-3c {
+    grid-area: 2 / 3 / 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.fa {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1rem;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github,
+.fa-envelope,
+.fa-instagram {
+    background: #484b6a;
+    color: white;
+}
+
+#item-4c {
+    grid-area: 3 / 3 / 4 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#item-5c {
+    grid-area: 4 / 3 / 5 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#item-6c {
+    grid-area: 4 / 1 / 5 / 2;
+    text-align: center;
+}
+
+#item-6c p {
+    padding: 0 20px;
+    font-size: 2rem;
+    color: #484b6a;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+#item-6c p2 {
+    padding: 0 20px;
+    font-size: 1.1rem;
+    color: #80849b;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
